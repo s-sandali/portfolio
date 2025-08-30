@@ -1,0 +1,107 @@
+{
+  "personal": {
+    "name": "Sandali",
+    "title": "Creative Developer & Designer",
+    "bio": "Passionate about creating beautiful, functional, and user-centered digital experiences. I love turning complex problems into simple, beautiful, and intuitive designs.",
+    "location": "Your Location",
+    "email": "sandali@example.com",
+    "phone": "+1 (555) 123-4567",
+    "photo": "/profile-photo.jpg"
+  },
+  "social": {
+    "github": "https://github.com/sandali",
+    "linkedin": "https://linkedin.com/in/sandali",
+    "twitter": "https://twitter.com/sandali",
+    "instagram": "https://instagram.com/sandali"
+  },
+  "skills": {
+    "frontend": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Sass"],
+    "backend": ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    "tools": ["Git", "Docker", "AWS", "Figma", "Adobe Creative Suite", "VS Code"],
+    "other": ["UI/UX Design", "Responsive Design", "REST APIs", "GraphQL", "Testing"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
+      "image": "/project1.jpg",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "github": "https://github.com/sandali/ecommerce",
+      "live": "https://ecommerce-demo.com",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "image": "/project2.jpg",
+      "technologies": ["Vue.js", "Firebase", "Vuex", "Vuetify"],
+      "github": "https://github.com/sandali/task-manager",
+      "live": "https://task-manager-demo.com",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "A beautiful weather dashboard that displays current weather conditions and forecasts using OpenWeatherMap API with animated weather icons.",
+      "image": "/project3.jpg",
+      "technologies": ["JavaScript", "CSS3", "HTML5", "OpenWeatherMap API"],
+      "github": "https://github.com/sandali/weather-dashboard",
+      "live": "https://weather-dashboard-demo.com",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and modern design principles.",
+      "image": "/project4.jpg",
+      "technologies": ["React", "Tailwind CSS", "GSAP", "Framer Motion"],
+      "github": "https://github.com/sandali/portfolio",
+      "live": "https://sandali-portfolio.com",
+      "featured": false
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "React Developer Certification",
+      "issuer": "Meta",
+      "date": "2023",
+      "image": "/cert1.jpg",
+      "url": "https://example.com/cert1"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design Professional",
+      "issuer": "Google",
+      "date": "2023",
+      "image": "/cert2.jpg",
+      "url": "https://example.com/cert2"
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Web Development",
+      "issuer": "freeCodeCamp",
+      "date": "2022",
+      "image": "/cert3.jpg",
+      "url": "https://example.com/cert3"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "Tech Company",
+      "period": "2022 - Present",
+      "description": "Developed and maintained responsive web applications using React and modern JavaScript frameworks."
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Designer",
+      "company": "Design Studio",
+      "period": "2021 - 2022",
+      "description": "Created user-centered designs by understanding business requirements and user feedback."
+    }
+  ]
+}
