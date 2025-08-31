@@ -53,7 +53,7 @@ Edit `src/data/portfolio.json` to customize your personal information:
     "bio": "Your bio description",
     "location": "Your Location",
     "email": "your.email@example.com",
-    "phone": "+1 (555) 123-4567",
+    "phone": "+94 (555) 123-4567",
     "photo": "/your-photo.jpg"
   }
 }
@@ -67,9 +67,7 @@ Update your social media links:
 {
   "social": {
     "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
-    "twitter": "https://twitter.com/yourusername",
-    "instagram": "https://instagram.com/yourusername"
+    "linkedin": "https://linkedin.com/in/yourusername"
   }
 }
 ```
