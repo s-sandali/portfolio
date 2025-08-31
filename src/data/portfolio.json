@@ -1,24 +1,23 @@
 {
   "personal": {
-    "name": "Sandali",
+    "name": "Sandali Sandagomi",
     "title": "Creative Developer & Designer",
-    "bio": "Passionate about creating beautiful, functional, and user-centered digital experiences. I love turning complex problems into simple, beautiful, and intuitive designs.",
-    "location": "Your Location",
-    "email": "sandali@example.com",
-    "phone": "+1 (555) 123-4567",
-    "photo": "/profile-photo.jpg"
+    "bio": "I build things. Sometimes they live on screens, sometimes they sneak into the real world. From crafting full-stack apps, to experimenting with IoT and embedded systems, I love turning ideas into stuff that actually works. I also dabble in UI/UX, because things should not only work, they should feel right. And when I’m not tinkering with tech, I’m diving into CIMA, trying to make sense of the numbers behind it all.Basically, I’m a curious mind with messy hair, a love for creating, and a soft spot for turning “what if?” into “heck yes, it works.”",
+    "location": "Rajagiriya, Sri Lanka",
+    "email": "sandalisandagomi@gmail.com",
+    "phone": "0716639395",
+    "photo": "pp.jpg"
   },
   "social": {
-    "github": "https://github.com/sandali",
-    "linkedin": "https://linkedin.com/in/sandali",
-    "twitter": "https://twitter.com/sandali",
-    "instagram": "https://instagram.com/sandali"
+    "github": "https://github.com/s-sandali",
+    "linkedin": "https://www.linkedin.com/in/sandali-sandagomi/"
+    
   },
   "skills": {
-    "frontend": ["React", "Vue.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Sass"],
-    "backend": ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
-    "tools": ["Git", "Docker", "AWS", "Figma", "Adobe Creative Suite", "VS Code"],
-    "other": ["UI/UX Design", "Responsive Design", "REST APIs", "GraphQL", "Testing"]
+    "frontend": ["React", "JavaScript", "Material-UI", "Framer Motion", "GSAP", "Tailwind CSS"],
+    "backend": ["Node.js", "Express", "Python", "Java", "Spring Boot","JWT", "MySQL", "MongoDB"],
+    "tools": ["Git", "Docker", "AWS", "Figma","Vercel"],
+    "other": ["UI/UX Design", "Responsive Design", "REST APIs", "Testing","Arduino"]
   },
   "projects": [
     {
@@ -65,27 +64,27 @@
   "certificates": [
     {
       "id": 1,
-      "title": "React Developer Certification",
-      "issuer": "Meta",
-      "date": "2023",
-      "image": "/cert1.jpg",
-      "url": "https://example.com/cert1"
+      "title": "MERN STACK",
+      "issuer": "University of Colombo School of Computing",
+      "date": "2025/0",
+      "image":  "/src/assets/certificates/mernstack.jpg",
+      "url": "https://www.linkedin.com/in/sandali-sandagomi/details/certifications/1750948982124/single-media-viewer/?profileId=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
     },
     {
       "id": 2,
-      "title": "UI/UX Design Professional",
-      "issuer": "Google",
-      "date": "2023",
-      "image": "/cert2.jpg",
-      "url": "https://example.com/cert2"
+      "title": "CIMA Diploma in Management Accounting ( CIMA Dip MA)",
+      "issuer": "CIMA",
+      "date": "2025/01",
+      "image": "cima2.png",
+      "url": "https://www.linkedin.com/in/sandali-sandagomi/details/certifications/1751508510402/single-media-viewer/?profileId=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
     },
     {
       "id": 3,
-      "title": "Full Stack Web Development",
-      "issuer": "freeCodeCamp",
-      "date": "2022",
-      "image": "/cert3.jpg",
-      "url": "https://example.com/cert3"
+      "title": "CIMA Certificate in Business Accounting (Cert BA)",
+      "issuer": "CIMA",
+      "date": "2024/07",
+      "image": "cima1.png",
+      "url": "https://www.linkedin.com/in/sandali-sandagomi/details/certifications/1750949476374/single-media-viewer/?profileId=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
     }
   ],
   "experience": [
@@ -103,5 +102,90 @@
       "period": "2021 - 2022",
       "description": "Created user-centered designs by understanding business requirements and user feedback."
     }
-  ]
+  ],
+  "achievements": [
+  {
+    "id": 1,
+    "title": "First Runners up in SDG youth challenge 2024",
+    "description": "Kinetic Kicks emerged as the 1st runners up at SDG Youth Challenge 2024, organized by the University of Kelaniya. This competition aimed to identify sustainable innovations aligned with the Sustainable Development Goals (SDGs). Our project’s focus on harnessing kinetic energy through piezo sensors to create a power-generating shoe resonated with the judges, showcasing our commitment to sustainability and innovation.",
+    "issuer": "University of Kelaniya",
+    "date": "2024/10",
+    "image": "sdg.png",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7269545511206977537/"
+  },
+  {
+    "id": 2,
+    "title": "Dean's List Year 1 Semester 1",
+    "description": "I was recognized on the Dean's List for Semester 1 of my Year 1 Computer Science degree at SLIIT, achieving a GPA of 4.0. This accomplishment reflects my commitment to academic excellence and my dedication to succeeding in my studies.",
+    "issuer": "SLIIT",
+    "date": "2024/11",
+    "image": "deanslist1.png",
+    "url": ""
+  },
+  {
+    "id": 3,
+    "title": "5th place at Start up Spark : Techno 2024",
+    "description": "Kinetic Kicks, our innovative power-generating shoe, achieved an impressive 5th place at Startup Spark: Techno 2024 This competition showcased cutting-edge entrepreneurial projects, and our team's dedication to harnessing kinetic energy through piezo sensors caught the judges' attention.",
+    "issuer": "IESL Student Chapter University of Moratuwa",
+    "date": "2024/10",
+    "image": "startupspark.png",
+    "url": "https://www.linkedin.com/posts/oshadhi-manage-49032a346_kinetickicks-innovation-startupspark2024-ugcPost-7306193099771244545-a-KH/?utm_source=share&utm_medium=member_ios&rcm=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
+  },
+  {
+    "id": 4,
+    "title": "Finalist at ALGOTHAN: CODEFEST",
+    "description": "Our team Morks 2.0 had the incredible opportunity to compete in the Algothon under the Tertiary Category at CODEFEST 2024, organized by the Faculty of Computing, SLIIT and emerged as a Finalists out of 150+ teams.",
+    "issuer": "Issued by Faculty of Computing SLIIT",
+    "date": "2025/01",
+    "image": "algothan.png",
+    "url": ""
+  },
+  {
+    "id": 5,
+    "title": "Dean's List Year 1 Semester 2",
+    "description": "I was recognized on the Dean's List for Semester 2 of my Year 1 Computer Science degree at SLIIT, achieving a GPA of 3.85.",
+    "issuer": "SLIIT",
+    "date": "2025/06",
+    "image": "deanslist2.png",
+    "url": ""
+  },
+  {
+    "id": 6,
+    "title": "CS Student Committee member",
+    "description": "I was appointed as member of the CS student committee for the year 2025/2026",
+    "issuer": "SLIIT",
+    "date": "2025/05",
+    "image": "cs.jpg",
+    "url": ""
+  },
+  {
+    "id": 7,
+    "title": "Finalist at SSD 2025- SDG project competition",
+    "description": "Kinetic Kicks, was shortlisted as a finalist in the SDG Project Competition at the 3rd International Conference on Smart Sustainable Development (SSD 2025), organized by the Auckland International Campus.",
+    "issuer": "Auckland International Campus",
+    "date": "2025/04",
+    "image": "ssd.png",
+    "url": "https://www.linkedin.com/posts/activity-7305519008819138560-APFj?utm_source=share&utm_medium=member_ios&rcm=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
+  },
+  {
+    "id": 8,
+    "title": "Finalist in SliitXtreme",
+    "description": "Our team, UKW, successfully secured a spot among the top 15 teams and became eligible for the finals of SLiITXtreme, a hackathon organized by the IEEE Computer Society of SLIIT. This intense competition challenged participants to develop innovative solutions to real-world problems within a limited timeframe, showcasing our strong problem-solving skills and ability to work effectively as a team.",
+    "issuer": "IEEE Computer Society of SLIIT",
+    "date": "2024/12",
+    "image": "sliitxtreme.png",
+    "url": ""
+  },
+  {
+    "id": 9,
+    "title": "Most Innovative idea winner at Innovolec 2025",
+    "description": "Kinetic Kicks, was the winner under most innovative idea category at Innovolec 2025 , organized by IEE PES Society, SLIIT",
+    "issuer": "IEE PES Society of Sliit",
+    "date": "2025/04",
+    "image": "innovolec.jpg",
+    "url": ""
+  }
+  
+]
+
 }

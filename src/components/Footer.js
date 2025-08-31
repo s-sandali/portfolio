@@ -14,11 +14,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-purple-900 text-white relative overflow-hidden">
+    <footer className="bg-slate-900 text-white relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-64 h-64 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gray-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-0 left-0 w-64 h-64 bg-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-slate-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 py-12 relative z-10">
@@ -33,10 +33,10 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-gray-300 bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-slate-300 bg-clip-text text-transparent">
                 {portfolioData.personal.name}
               </h3>
-              <p className="text-gray-300 mb-4 leading-relaxed">
+              <p className="text-slate-300 mb-4 leading-relaxed">
                 {portfolioData.personal.bio}
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
@@ -54,7 +54,7 @@ const Footer = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <div className="w-5 h-5 bg-gradient-to-r from-purple-400 to-gray-300 rounded-full"></div>
+                    <div className="w-5 h-5 bg-gradient-to-r from-pink-400 to-slate-300 rounded-full"></div>
                   </motion.a>
                 ))}
               </div>
@@ -68,7 +68,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold mb-4 text-purple-300">Quick Links</h4>
+              <h4 className="text-lg font-semibold mb-4 text-pink-300">Quick Links</h4>
               <ul className="space-y-2">
                 {[
                   { name: 'About', href: '#about' },
@@ -86,7 +86,7 @@ const Footer = () => {
                   >
                     <a
                       href={link.href}
-                      className="text-gray-300 hover:text-purple-300 transition-colors duration-300 hover:underline"
+                      className="text-slate-300 hover:text-pink-300 transition-colors duration-300 hover:underline"
                     >
                       {link.name}
                     </a>
@@ -103,8 +103,8 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-lg font-semibold mb-4 text-purple-300">Contact Info</h4>
-              <div className="space-y-2 text-gray-300">
+              <h4 className="text-lg font-semibold mb-4 text-pink-300">Contact Info</h4>
+              <div className="space-y-2 text-slate-300">
                 <motion.p
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -135,7 +135,7 @@ const Footer = () => {
 
           {/* Divider */}
           <motion.div
-            className="w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent mb-8"
+            className="w-full h-px bg-gradient-to-r from-transparent via-pink-500 to-transparent mb-8"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -145,7 +145,7 @@ const Footer = () => {
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <motion.p
-              className="text-gray-300 text-sm"
+              className="text-slate-300 text-sm"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -155,7 +155,7 @@ const Footer = () => {
             </motion.p>
 
             <motion.p
-              className="text-gray-300 text-sm flex items-center space-x-1"
+              className="text-slate-300 text-sm flex items-center space-x-1"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
@@ -172,7 +172,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+        className="fixed bottom-8 right-8 p-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
         whileHover={{ y: -5, scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, scale: 0 }}

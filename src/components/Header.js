@@ -40,16 +40,17 @@ const Header = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-primary-200' 
+          ? 'bg-slate-800/90 backdrop-blur-md shadow-lg border-b border-slate-600/50' 
           : 'bg-transparent'
       }`}
     >
-      <div className="container-custom">
+      <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
+          
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl md:text-3xl font-bold gradient-text"
+            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-pink-600 text-transparent bg-clip-text"
           >
             Sandali
           </motion.div>
@@ -64,10 +65,10 @@ const Header = () => {
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-primary-700 hover:text-purple-600 font-medium transition-colors duration-200 relative group"
+                className="text-slate-200 hover:text-pink-400 font-medium transition-colors duration-200 relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
               </motion.button>
             ))}
           </nav>
@@ -76,9 +77,11 @@ const Header = () => {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg bg-white/20 backdrop-blur-sm border border-white/30"
+            className="md:hidden p-2 rounded-lg bg-slate-700/30 backdrop-blur-sm border border-slate-600/40"
           >
-            {isOpen ? <X size={24} className="text-primary-700" /> : <Menu size={24} className="text-primary-700" />}
+            {isOpen 
+              ? <X size={24} className="text-slate-200" /> 
+              : <Menu size={24} className="text-slate-200" />}
           </motion.button>
         </div>
 
@@ -100,7 +103,7 @@ const Header = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-3 text-primary-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-all duration-200 font-medium"
+                className="block w-full text-left px-4 py-3 text-slate-200 hover:text-pink-400 hover:bg-pink-500/20 rounded-lg transition-all duration-200 font-medium"
               >
                 {item.name}
               </motion.button>
