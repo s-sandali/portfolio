@@ -95,7 +95,7 @@ const About = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Crafting digital experiences with passion and precision
+             Driven by curiosity and powered by code
             </motion.p>
           </div>
 
@@ -251,21 +251,7 @@ const About = () => {
                 </motion.div>
               )}
 
-              {/* Download CV Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 1.2 }}
-              >
-                <motion.button
-                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-4 rounded-xl font-medium hover:from-pink-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 group"
-                  whileHover={{ y: -3 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Download className="w-5 h-5 group-hover:animate-bounce" />
-                  <span className="text-lg">Download CV</span>
-                </motion.button>
-              </motion.div>
+              
             </motion.div>
           </div>
         </motion.div>

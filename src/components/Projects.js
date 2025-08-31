@@ -14,49 +14,43 @@ const Projects = () => {
 
   const filters = [
     { id: 'all', label: 'All Projects' },
-    { id: 'featured', label: 'Featured' },
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'fullstack', label: 'Full Stack' }
+    { id: 'featured', label: 'Featured' }
   ];
 
   const filteredProjects = portfolioData.projects.filter(project => {
     if (filter === 'all') return true;
     if (filter === 'featured') return project.featured;
-    if (filter === 'frontend') return project.technologies.some(tech => 
-      ['React', 'Vue.js', 'JavaScript', 'HTML5', 'CSS3'].includes(tech)
-    );
-    if (filter === 'fullstack') return project.technologies.some(tech => 
-      ['Node.js', 'Express', 'MongoDB', 'PostgreSQL'].includes(tech)
-    );
     return true;
   });
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
   };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: "easeOut" } }
+  };
+
+  // Helper function to dynamically import project images
+  const getProjectImage = (imagePath) => {
+    try {
+      const cleanPath = imagePath.replace(/^\/+/, '');
+      if (cleanPath.includes('assets/')) {
+        const relativePath = cleanPath.replace('assets/', '../assets/');
+        return require(`../${relativePath}`);
       }
+      if (!cleanPath.includes('/')) return require(`../assets/${cleanPath}`);
+      return require(`../assets/${cleanPath}`);
+    } catch (error) {
+      console.warn(`Project image not found: ${imagePath}`);
+      return null;
     }
   };
 
   return (
     <section id="projects" className="py-20 bg-slate-800 relative overflow-hidden">
-      {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 left-10 w-40 h-40 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow" style={{ animationDelay: '1s' }}></div>
@@ -96,9 +90,9 @@ const Projects = () => {
             </motion.p>
           </div>
 
-          {/* Filter Buttons */}
+          {/* Filter Button */}
           <motion.div 
-            className="flex flex-wrap justify-center gap-4 mb-12"
+            className="flex justify-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -127,7 +121,7 @@ const Projects = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 className="bg-slate-700/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-600/50 group"
@@ -136,13 +130,18 @@ const Projects = () => {
               >
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-pink-500 to-slate-600 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <div className="text-4xl mb-2">🚀</div>
-                      <p className="text-lg font-medium">{project.title}</p>
+                  {getProjectImage(project.image) ? (
+                    <img
+                      src={getProjectImage(project.image)}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-white text-lg font-medium">
+                      {project.title}
                     </div>
-                  </div>
-                  
+                  )}
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                     {project.github && (
@@ -239,26 +238,6 @@ const Projects = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* Call to Action */}
-          <motion.div
-            className="text-center mt-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <motion.a
-              href={portfolioData.social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-4 rounded-lg font-medium hover:from-pink-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Github className="w-5 h-5" />
-              <span>View More on GitHub</span>
-            </motion.a>
           </motion.div>
         </motion.div>
       </div>

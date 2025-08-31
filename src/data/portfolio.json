@@ -22,44 +22,35 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      "image": "/project1.jpg",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
-      "github": "https://github.com/sandali/ecommerce",
-      "live": "https://ecommerce-demo.com",
+      "title": "Fungi-Flow",
+      "description": "“A full-stack Mushroom resource Management System designed to streamline mushroom cultivation, inventory, and sales. FungiFlow helps labs, farmers, and sellers track batches, manage resources, monitor growth, and improve efficiency with real-time insights.”",
+      "image": "fungiflow.jpg",
+      "technologies": ["React", "Spring", "MySQL"],
+      "github": "https://github.com/s-sandali/fungifront.git",
+      "live": "",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      "image": "/project2.jpg",
-      "technologies": ["Vue.js", "Firebase", "Vuex", "Vuetify"],
-      "github": "https://github.com/sandali/task-manager",
-      "live": "https://task-manager-demo.com",
+      "title": "Kinetic Kicks",
+      "description": "Kinetic Kicks is a wearable innovation that converts kinetic energy from footsteps into electricity using piezoelectric sensors. The energy is stored in a built-in battery, allowing users to charge mobile devices on the go. A Bluetooth-connected mobile app lets users track battery levels in real time, merging sustainable energy with smart technology.",
+      "image": "kinetickicks.jpg",
+      "technologies": ["Piezoelectric Sensors", "ESP32", "RecatNative"],
+      "github": "",
+      "live": "",
       "featured": true
     },
     {
       "id": 3,
-      "title": "Weather Dashboard",
-      "description": "A beautiful weather dashboard that displays current weather conditions and forecasts using OpenWeatherMap API with animated weather icons.",
-      "image": "/project3.jpg",
-      "technologies": ["JavaScript", "CSS3", "HTML5", "OpenWeatherMap API"],
-      "github": "https://github.com/sandali/weather-dashboard",
-      "live": "https://weather-dashboard-demo.com",
-      "featured": false
-    },
-    {
-      "id": 4,
-      "title": "Portfolio Website",
-      "description": "A responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and modern design principles.",
-      "image": "/project4.jpg",
-      "technologies": ["React", "Tailwind CSS", "GSAP", "Framer Motion"],
-      "github": "https://github.com/sandali/portfolio",
-      "live": "https://sandali-portfolio.com",
-      "featured": false
+      "title": "Advanced Naval Battle Simulator",
+      "description": "The Advanced Naval Battle Simulator is a C-based program developed to simulate progressively challenging naval warfare scenarios. The simulator is designed for training purposes, demonstrating the interaction between battleships and escort ships using projectile motion, impact calculation, and user strategy.",
+      "image": "",
+      "technologies": ["C"],
+      "github": "https://github.com/s-sandali/Advanced-Naval-Battle-Simulator.git",
+      "live": "",
+      "featured": true
     }
+    
   ],
   "certificates": [
     {
@@ -87,22 +78,7 @@
       "url": "https://www.linkedin.com/in/sandali-sandagomi/details/certifications/1750949476374/single-media-viewer/?profileId=ACoAAFPcj68BDnK_ERQid64vfbMfw9IRslKaeTE"
     }
   ],
-  "experience": [
-    {
-      "id": 1,
-      "title": "Frontend Developer",
-      "company": "Tech Company",
-      "period": "2022 - Present",
-      "description": "Developed and maintained responsive web applications using React and modern JavaScript frameworks."
-    },
-    {
-      "id": 2,
-      "title": "UI/UX Designer",
-      "company": "Design Studio",
-      "period": "2021 - 2022",
-      "description": "Created user-centered designs by understanding business requirements and user feedback."
-    }
-  ],
+ 
   "achievements": [
   {
     "id": 1,

@@ -160,33 +160,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Social Links */}
-              <motion.div
-                className="pt-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.8 }}
-              >
-                <h4 className="text-lg font-semibold text-slate-100 mb-4">Follow Me</h4>
-                <div className="flex space-x-4">
-                  {Object.entries(portfolioData.social).map(([platform, url], index) => (
-                    <motion.a
-                      key={platform}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-slate-700/60 backdrop-blur-sm rounded-full shadow-sm hover:shadow-md transition-all duration-300 hover:bg-pink-500/20"
-                      whileHover={{ y: -5, scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={inView ? { opacity: 1, scale: 1 } : {}}
-                      transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
-                    >
-                      <div className="w-5 h-5 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full"></div>
-                    </motion.a>
-                  ))}
-                </div>
-              </motion.div>
+              
             </motion.div>
 
             {/* Contact Form */}
