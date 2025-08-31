@@ -327,7 +327,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Enhanced Scroll to Top Button */}
+      {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
         className={`fixed bottom-8 right-8 p-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white rounded-full shadow-2xl hover:shadow-pink-500/25 transition-all duration-300 z-50 group ${
